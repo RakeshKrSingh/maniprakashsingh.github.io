@@ -1,32 +1,311 @@
+
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Mr. Mani Prakash Singh</title>
+        <title>Parth Viroja</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <style type="text/css">
             *{
-              margin:0px;
-              padding:0px;
-              font:14px 'Calibri';
-              font-weight:lighter;
+                margin:0;
+                padding:0;
+                font-family:'Calibri';
+                font-weight:lighter;
+                font-size:20px;
+                text-decoration:none;
+                list-style-type:none;
+                outline:0;color:#fff;
+                text-shadow:1px 1px 1px rgba(0,0,0,0.1);
+                box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box
+            }
+            h1{
+                color:#900;
+                font-size:1em
+            }
+            h2
+            {
+                color:#900;
+                font-size:2em
+            }h3
+            {color:#900;
+             font-size:3em
+            }
+            h4{
+                color:#900;
+                font-size:4em
+            }
+            h5
+            {color:#900;
+             font-size:5em
+            }
+            h6
+            {color:#900;
+             font-size:6em
+            }
+            p,ul,li{
+                letter-spacing:1px;
+                display:block;
+                padding:4px
+            }
+            a{
+                font-size:inherit;
+                color:inherit;
+                border-bottom:1px dotted #900
+            }
+            hr{
+                border:0;
+                border-bottom:1px dotted #000;
+                margin:10px
+            }
+            html,body,.wrapper{
+                height:100%;
+                min-height:100%;
+                min-height:100vh
             }
             body{
                 background-color:#000;
-                background-image:url('http://wallalay.com/wp-content/uploads/2014/09/HD-Background-32.jpg');
-                background-size:100% 100%;
+                background-image:url('1600.jpg');
                 background-position:center center;
+                background-attachment:fixed;
+                background-size:100% 100%;
+                background-repeat:no-repeat
             }
-            h1{
+            .page{
+                position:absolute;
+                display:block;
+                top:60px;
+                right:60px;
+                width:70%;max-width:70%;
+                padding:20px;
+                min-height:100vh;
+                max-height:100vh;
+                z-index:11111
+            }
+            .page>.block{
+                display:block;
+                display:flex;
+                flex-direction:row-reverse
+            }
+            .block>div{
                 display:inline-block;
-                margin:13% auto;
-                margin-left:76%;
-                text-align:center;
-                font-size:2em;
-                color:#999;
+                padding:10px 20px;
+                margin-bottom:40px;
+                background-color:rgba(255,255,255,0.1);
+                border-radius:10px
             }
-        </style>
+            .block>div>ul{
+                text-align:right
+            }
+            .my-name{
+                color:#900
+            }
+            .my-name span{
+                font-size:inherit
+            }
+            .title{
+                text-align:right;
+                color:#900
+            }
+            .tag{
+                background-color:#900;
+                color:#fff;
+                font-size:inherit;
+                margin:0 4px;
+                padding:0 4px
+            }
+            .show-1{
+                -webkit-animation:block-show 1s ease
+            }
+            .show-2{
+                -webkit-animation:block-show 2s ease
+            }
+            .show-3{
+                -webkit-animation:block-show 3s ease
+            }
+            .show-4{
+                -webkit-animation:block-show 4s ease
+            }
+            .show-5{
+                -webkit-animation:block-show 5s ease
+            }
+            .show-6{
+                -webkit-animation:block-show 6s ease
+            }
+            @-webkit-keyframes block-show{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes block-hide{0%{opacity:1}100%{opacity:0}}@media(max-width:1600px){body{background-size:100% 100%}}@media(max-width:1366px){body{background-image:url('image/1366.jpg')}}@media(max-width:1024px){body{background-image:url('image/1024.jpg')}}@media(max-width:768px){body{background-image:url('image/768.jpg')}
+             .page{                                                                                                                                                                    
+                 position:relative;
+                 margin:0 auto;
+                 top:0;
+                 right:0;
+                 display:block;
+                 width:90%;
+                 max-width:90%;
+                 padding:20px
+             }
+             .page>.block{
+                 display:block
+             }
+             .block>div{
+                 display:block;
+                 padding:5px 10px;
+                 margin-bottom:10px;
+                 background-color:rgba(255,255,255,0.1)
+             }
+             h4
+             {
+                 text-align:right;
+                 font-size:2em
+             }
+             h2{
+                 font-size:1.5em
+             }
+             p,ul,li{
+                 font-size:14px
+             }
+            }@media(max-width:480px){
+                body
+                {//background-image:url('image/480.jpg')}}@media(max-width:322px){body{background-image:url('image/320.jpg')}}
+                </style>
     </head>
     <body>
-        <h1>Comming Soon...</h1>
+        <div class="page">
+            <div class="my-photo">
+                
+            </div>
+            <div class="block show-2">
+                <div>
+                    <h2 class="my-name">
+                        <span>Name : "</span>Mr. Mani Prakash Singh<span>" </span>
+                    </h2>
+                    <hr>
+                    <ul>
+                        <li>mpsingh.sonu@gmail.com</li>
+                        <li>maniprakashsingh@hotmail.com</li>
+                        <li>+919033713085 / +918401964515</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block show-3">
+                <div>
+                    <h2 class="title">Career Objective</h2>
+                    <hr>
+                    <ul>
+                        <li>Seeking a career in a creative working environment, where I am always share my knowledge and innovative ideas, for the development of new things and new technology for various organizations or a corporation. </li>
+                        <li>I would like to devote myself & my skills to the respective company with staying long time there and improving my knowledge with guarantee to satisfy the company’s need as well as always ready to learn new things.  </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block show-3">
+                <div>
+                    <h2 class="title">Work Experience</h2>
+                    <hr>
+                    <ul>
+                        <li>Software Developer <a href="http://inflibnet.ac.in">INFLIBNET</a></li>
+                        <li>Software Engineer / Developer <a href="http://refreshitsolutions.com/wordpress/">RefreshIT Solutions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div>
+                    <h2 class="title">Knowledge</h2>
+                    <hr>
+                    <ul>
+                        <li>PHP framework (<span class="tag">Laravel</span>,
+                            <span class="tag">Core PHP</span>,Codeigniter, Joomla, Drupal, Wordpress)
+                        </li>
+                        <li>
+                            <span class="tag">Apache Solr</span>, 
+                            <span class="tag">Oracle</span>, MYSQL
+                        </li>
+                        <li>HTML5, CSS3, 
+                            <span class="tag">Bootstrap 3.0</span>
+                        </li>
+                        <li>
+                            <span class="tag">Jquery</span>,
+                            Angular JS, Paper JS, particles JS
+                        </li>
+                        <li>VB.net, ASP.net, JSP</li>
+                        <li>C, C++, Java, Python, Android</li>
+                        <li>
+                            <span class="tag">Arduino</span>, 
+                            <span class="tag">Processing</span>, 
+                            CorelDraw, Photoshop
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div>
+                    <h2 class="title">Ongoing Project</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"> Block</a>
+                        </li>
+                        <li>
+                            <a href="http://github.com/ManiPrakashSingh/" target="_blank"> Project</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Online CRM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div>
+                    <h2 class="title">Interested In</h2>
+                    <hr>
+                    <ul>
+                        <li>Web Development(Front/Back End)</li>
+                        <li>Software Development & Mathematics</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block"><div>
+                    <h2 class="title">Scholastics</h2>
+                    <hr>
+                    <ul>
+                        <li>M.C.A completed in 2014 with 
+                            <span class="tag">6.69</span>
+                        </li>
+                        <li>B.C.A completed in 2011 with 
+                            <span class="tag">57.35%</span>
+                        </li>
+                        <li>HSC completed in 2006 with 
+                            <span class="tag">57.60%</span>
+                        </li>
+                        <li>
+                            SSC completed in 2002 with 
+                            <span class="tag">60.35%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block">
+                <div>
+                    <h2 class="title">Personal Information</h2>
+                    <hr>
+                    <ul>
+                        <li>Tiwari Tola, Ward No.- 7, Barauli, Gopalganj : Address</li>
+                        <li>+919033713085, +8401964515 : Contact</li>
+                        <li>08-06-1987 : Date of Birth</li>
+                        <li>mpsingh.sonu@gmail.com : Email</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $(window).scroll(function(){
+                    $(".page > .block").each(function(a){
+                        var c=$(this).position().top+$(this).outerHeight();
+                        var b=($(window).scrollTop()+$(window).height()+400);
+                        if(b>c){if(!$(this).hasClass("show-5")){$(this).addClass("show-5")}}})})});
+                </script>
     </body>
 </html>
